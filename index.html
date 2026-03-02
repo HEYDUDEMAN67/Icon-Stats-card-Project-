@@ -1,10 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  </html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Falcons Esports</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f4f7;
+        color: #1f2937;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .subtitle {
+        color: #6b7280;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+        margin-bottom: 30px;
+    }
+
+    .card h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    /* ICON SECTION */
+    .icon-grid {
+        display: flex;
+        gap: 30px;
+    }
+
+    .icon-box {
+        background: #f3f4f6;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 150px;
+    }
+
+    .icon-box svg {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    /* TABLE STYLING */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    thead {
+        background-color: #111827;
+        color: white;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f9fafb;
+    }
+
+    tbody tr {
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .footer {
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Neon Falcons Esports</h1>
+    <p class="subtitle">
+        Welcome to the Neon Falcons profile card. Check out our custom icons and season stats below.
+    </p>
+
+    <!-- TEAM ICONS CARD -->
+    <div class="card">
+        <h2>Team Icons</h2>
+
+        <div class="icon-grid">
+
+            <!-- Falcon Badge SVG -->
+            <div class="icon-box">
+                <svg viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="#c7d2fe"/>
+                    <polygon points="50,20 75,70 50,55 25,70"
+                             fill="#1f2937"/>
+                </svg>
+                <p>Falcon Badge</p>
+            </div>
+
+            <!-- Trophy SVG -->
+            <div class="icon-box">
+                <svg viewBox="0 0 100 100">
+                    <rect x="35" y="25" width="30" height="25" fill="#93c5fd"/>
+                    <rect x="45" y="50" width="10" height="15" fill="#1f2937"/>
+                    <rect x="40" y="65" width="20" height="8" fill="#1f2937"/>
+                </svg>
+                <p>Trophy</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SEASON STATS CARD -->
+    <div class="card">
+        <h2>Season Stats</h2>
+        <p><strong>Neon Falcons 2025–2026 Season Snapshot</strong></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Value</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Matches Played</strong></td>
+                    <td>18</td>
+                    <td>Regular season</td>
+                </tr>
+                <tr>
+                    <td><strong>Wins</strong></td>
+                    <td>12</td>
+                    <td>Strong mid-season run</td>
+                </tr>
+                <tr>
+                    <td><strong>Losses</strong></td>
+                    <td>6</td>
+                    <td>Mostly early season</td>
+                </tr>
+                <tr>
+                    <td><strong>Tournaments</strong></td>
+                    <td>3</td>
+                    <td>1st, 2nd, 4th</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
